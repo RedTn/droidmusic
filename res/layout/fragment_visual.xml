@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Visual_Fragment_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#006699"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/sun"
+        android:background="@animator/sun_animation" />
+
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cloud"
+        android:paddingLeft="100dp"
+        android:paddingTop="70dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cloud"
+        android:paddingLeft="150dp"
+        android:paddingTop="90dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView
+        android:id="@+id/ground"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/ground"
+        android:src="@drawable/ground" />
+
+    <ImageView
+        android:id="@+id/troll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/troll"
+        android:background="@animator/troll_animation" />
+    
+    <ImageView
+        android:id="@+id/troll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:contentDescription="@string/troll"
+        android:background="@drawable/troll11" />
+    
+    <ImageView
+        android:id="@+id/window"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/window"
+        android:src="@drawable/window" />
+      	
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Button" />
+
+</RelativeLayout>

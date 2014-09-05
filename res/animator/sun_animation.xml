@@ -1,0 +1,25 @@
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sun_animation"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/sun1"
+        android:duration="30"/>
+    <item
+        android:drawable="@drawable/sun2"
+        android:duration="30"/>
+    <item
+        android:drawable="@drawable/sun3"
+        android:duration="30"/>
+    <item
+        android:drawable="@drawable/sun4"
+        android:duration="30"/>
+    <item
+        android:drawable="@drawable/sun5"
+        android:duration="30"/>
+    <item
+        android:drawable="@drawable/sun1"
+        android:duration="30"/>
+
+</animation-list>

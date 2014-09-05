@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/Gallery_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Gallery
+            android:id="@+id/musicPhotoGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_activity_galery_height"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Seek_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/seekTime"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/seekTimeDefault" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/record_slider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Buttons_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/PlayButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/playButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playbuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PauseButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/stopButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/pauseButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pausebuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/StopButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/stopButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stopbuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/volumeDownButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/volumeDownButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/previousButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/volumedownbuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/volumeUpButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/volumeUpButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/nextButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/volumeupbuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ShuffleButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/shuffleButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/shuffleButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shufflebuttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LoopButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/loopButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/loopButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/loopbuttons" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Volume_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       <!--  <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Playlist_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="fill_vertical"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/playlistView"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_gravity="fill_vertical"
+            android:choiceMode="singleChoice"
+            android:scrollbars="vertical" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Status_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/playStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.01"
+            android:text="Playing"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/OptionButton_Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/playlistButton"
+                android:layout_width="@dimen/main_activity_playbuttons_width"
+                android:layout_height="@dimen/main_activity_playbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/playlistButton"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playlistbuttons" />
+
+            <ImageButton
+                android:id="@+id/optionButton"
+                android:layout_width="@dimen/main_activity_optionbuttons_width"
+                android:layout_height="@dimen/main_activity_optionbuttons_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/optionButton"
+                android:onClick="openOption"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/optionbuttons" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
